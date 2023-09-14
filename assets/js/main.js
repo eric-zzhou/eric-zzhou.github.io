@@ -156,9 +156,9 @@
   }
 
   /**
-   * Testimonials slider
+   * courses slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.courses-slider', {
     speed: 600,
     loop: true,
     autoplay: {
