@@ -561,7 +561,12 @@ section .container {
 --------------------------------------------------------------*/
 .courses .courses-carousel,
 .courses .courses-slider {
-  overflow: hidden;
+  overflow: visible;
+  width: 90%;
+}
+
+.courses .swiper-slide-prev {
+  opacity: 0;
 }
 
 .courses .courses-item {
@@ -591,25 +596,6 @@ section .container {
   margin: 0 0 0 45px;
 }
 
-.courses .courses-item .quote-icon-left,
-.courses .courses-item .quote-icon-right {
-  color: rgba(255, 255, 255, 0.25);
-  font-size: 26px;
-}
-
-.courses .courses-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.courses .courses-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
 .courses .courses-item p {
   /* font-style: italic; */
   margin: 0 15px 0 15px;
@@ -636,6 +622,17 @@ section .container {
 .courses .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
+
+.courses .swiper-button-prev {
+  color:#18d26e;
+  transform: translateX(-200%);
+}
+.courses .swiper-button-next{
+  color:#18d26e;
+  transform: translateX(200%);
+}
+
+
 
 /*--------------------------------------------------------------
 # Resume

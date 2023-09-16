@@ -136,6 +136,17 @@
         scrollto(window.location.hash)
       }
     }
+    var curr = courseswiper.activeIndex - 3;
+    var slides = document.body.getElementsByClassName('swiper-wrapper')[0].children;
+    for (var i = 0; i < slides.length; i++) {
+      var slide = slides[i];
+      var slideind = Number(slide.getAttribute('data-swiper-slide-index'));
+      if (slideind == curr || slideind == ((curr + 7) % 6) || slideind == ((curr + 8) % 6)) {
+        slide.style.opacity = "1";
+      } else {
+        slide.style.opacity = "0";
+      }
+    }
   });
 
   /**
@@ -158,13 +169,15 @@
   /**
    * courses slider
    */
-  new Swiper('.courses-slider', {
-    speed: 600,
+  let courseswiper = new Swiper('.courses-slider', {
+    speed: 300,
     loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
+    grabCursor: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
+    autoplay: false,
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
@@ -181,8 +194,32 @@
         slidesPerView: 3,
         spaceBetween: 20
       }
-    }
+    },
+    keyboard: true,
   });
+
+  courseswiper.on('slideChange', function () {
+    var curr = (courseswiper.activeIndex - 3) % 6;
+    if (curr == -1) {
+      curr = 5;
+    }
+
+    var slides = document.body.getElementsByClassName('swiper-wrapper')[0].children;
+    for (var i = 0; i < slides.length; i++) {
+      var slide = slides[i];
+      var slideind = Number(slide.getAttribute('data-swiper-slide-index'));
+      // console.log(typeof(curr));
+      // console.log(typeof(slideind));
+      // console.log(curr + ", " + slideind + ", " + (slideind == curr || slideind == curr + 1 || slideind == curr + 2));
+      // console.log(curr + ", " + (curr + 1) + ", " + (curr + 2));
+      // console.log("");
+      if (slideind == curr || slideind == (curr + 1) % 6 || slideind == (curr + 2) % 6) {
+        slide.style.opacity = "1";
+      } else {
+        slide.style.opacity = "0";
+      }
+    }
+});
 
   /**
    * Porfolio isotope and filter
