@@ -199,10 +199,7 @@
   });
 
   courseswiper.on('slideChange', function () {
-    var curr = (courseswiper.activeIndex - 3) % 6;
-    if (curr == -1) {
-      curr = 5;
-    }
+    var curr = (courseswiper.activeIndex + 3) % 6;
 
     var slides = document.body.getElementsByClassName('swiper-wrapper')[0].children;
     for (var i = 0; i < slides.length; i++) {
