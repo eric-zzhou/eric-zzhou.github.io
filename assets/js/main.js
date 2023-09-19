@@ -137,7 +137,7 @@
       }
     }
     var curr = courseswiper.activeIndex - 3;
-    var slides = document.body.getElementsByClassName('swiper-wrapper')[0].children;
+    var slides = document.body.getElementsByClassName('course-swiper')[0].children;
     for (var i = 0; i < slides.length; i++) {
       var slide = slides[i];
       var slideind = Number(slide.getAttribute('data-swiper-slide-index'));
@@ -201,7 +201,7 @@
   courseswiper.on('slideChange', function () {
     var curr = (courseswiper.activeIndex + 3) % 6;
 
-    var slides = document.body.getElementsByClassName('swiper-wrapper')[0].children;
+    var slides = document.body.getElementsByClassName('course-swiper')[0].children;
     for (var i = 0; i < slides.length; i++) {
       var slide = slides[i];
       var slideind = Number(slide.getAttribute('data-swiper-slide-index'));
