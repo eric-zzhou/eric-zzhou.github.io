@@ -940,7 +940,7 @@ section .container {
   padding-right:5px;
   border-radius: 10px;
   color:#169b54;
-  background-color: rgba(211, 211, 211, 0.5);
+  background-color: rgba(211, 211, 211, 0.75);
   z-index:10;
 }
 
