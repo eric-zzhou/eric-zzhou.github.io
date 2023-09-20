@@ -1059,6 +1059,7 @@ section .container {
 .portfolio-details .portfolio-details-slider .swiper-button-prev,
 .portfolio-details .portfolio-details-slider .swiper-button-next {
   position:absolute;
+  transform:translateY(-50%);
   color:rgba(255, 255, 255, 0.25);
   padding: 30px 20px;
   border-radius: 10px;
