@@ -1044,11 +1044,31 @@ section .container {
   background-color: #18d26e;
 }
 
+.portfolio-details .portfolio-details-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio-details .portfolio-details-slider img,
 .portfolio-details .portfolio-details-slide video {
   /* width:800px; */
-  height:463px
-  /* max-height:800px; */
+  max-width: 750px;
+  max-height: 450px;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-button-prev,
+.portfolio-details .portfolio-details-slider .swiper-button-next {
+  position:absolute;
+  color:rgba(255, 255, 255, 0.25);
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-details .portfolio-details-slider .swiper-button-prev:hover,
+.portfolio-details .portfolio-details-slider .swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color:rgba(255, 255, 255, 1);
 }
 
 /*--------------------------------------------------------------
