@@ -1044,6 +1044,13 @@ section .container {
   background-color: #18d26e;
 }
 
+.portfolio-details .portfolio-details-slider img,
+.portfolio-details .portfolio-details-slide video {
+  /* width:800px; */
+  height:463px
+  /* max-height:800px; */
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
