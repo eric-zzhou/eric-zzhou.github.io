@@ -1,8 +1,7 @@
 s = """
-Explored evolutionary reinforcement learning, an advanced fusion of genetic algorithms and machine learning (ML). Genetic algorithms, inspired by biological evolution, were employed to generate randomized populations, selectively refining individuals based on heuristic evaluation for subsequent generations. ML models, particularly neural networks, allowed for complex decision-making processes.
- • Leveraged the NEAT library to orchestrate the training of AI bots for complex games, including Flappy Bird, Pong, and 2048
- • Delved into academic research papers pertaining to genetic programming and reinforcement learning, acquiring an in-depth understanding of fundamental principles
- • Applied the min-max algorithm and conducted comprehensive heuristic explorations across various gaming scenarios
+• Designed and trained a 98% accurate Convolutional Neural Network (CNN) using TensorFlow/Keras to recognize alphanumeric characters from a diverse dataset
+• Utilized OpenCV and NumPy for image preprocessing, extracting letters for CNN input
+• Produced sophisticated data visualizations with Seaborn, Matplotlib, and OpenCV to effectively illustrate data and various outputs
 """
 
 lines = s.split("\n")
