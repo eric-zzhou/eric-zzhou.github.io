@@ -997,6 +997,8 @@ section .container {
 
 .portfolio-details .portfolio-info {
   padding-top: 45px;
+  max-height:80vh;
+  overflow-y:scroll;
 }
 
 .portfolio-details .portfolio-info h3 {

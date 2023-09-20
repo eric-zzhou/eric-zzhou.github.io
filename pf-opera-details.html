@@ -48,7 +48,6 @@
 
           <div class="col-lg-8">
             <h2 class="portfolio-title">Peking Opera Experience</h2>
-
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
@@ -67,7 +66,6 @@
               </div>
               <div class="swiper-pagination"></div>
             </div>
-
           </div>
 
           <div class="col-lg-4 portfolio-info">
@@ -79,9 +77,12 @@
               <li><strong>Paper</strong>: <a href="https://easychair.org/conferences/submission?a=31550500&submission=6649869">Conference Submission</a></li>
             </ul>
             <ul style="list-style-type:disc; list-style-position:inside">
+              <li>Optimized computational efficiency by curating a focused subset of 83 key facial landmarks from MediaPipe's library of 478, also employing Contrast Limited Adaptive Histogram Equalization (CLAHE) to enhance precision under challenging lighting conditions</li>
+              <li>Innovated an algorithmic solution to extend facial masks beyond eyebrows using hair detection (OpenCV), encompassing image thresholding, direction vectors, and NumPy post-processing for curvature and scaling bounds, ensuring comprehensive face coverage</li>
               <li>Designed database queries to facilitate personalized facial makeup style matching using Pandas</li>
-              <li>Developed 2 filter application algorithms employing OpenCV, MediaPipe, and Pillows to show user with applied facial makeup</li>
-              <li>Crafted an engaging, interactive website UI culminating all project components by integrating Flask with frontend development, bolstered by the power of Bootstrap styling and AJAX functions. The UI is also modular and easily expandable with Jinja2</li>
+              <li>Implemented systematic mask application with stiff mask mapping technique, featuring automatic preprocessing such as cropping and background removal through a flood fill algorithm. Leveraged facial landmarks to rotate, resize, and slightly transparently apply cleaned masks (Pillows, OpenCV)</li>
+              <li>Engineered feature-based/realistic facial makeup mapping, partitioning the dataset into mask components, creating manual point maps, and employing optical flow and Delaunay triangulation for superior mask fit. Incorporated image masking to reveal the user's eyes and mouth for a realistic effect</li>
+              <li>Crafted an engaging and interactive website UI by seamlessly integrating Flask with frontend development, elevating the user experience with Bootstrap styling and AJAX functions. Ensured UI modularity and scalability through Jinja2, facilitating future enhancements</li>
             </ul>
           </div>
 
