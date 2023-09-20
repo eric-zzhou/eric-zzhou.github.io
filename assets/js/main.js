@@ -170,7 +170,7 @@
    * courses slider
    */
   let courseswiper = new Swiper('.courses-slider', {
-    speed: 300,
+    speed: 250,
     loop: true,
     grabCursor: true,
     navigation: {
@@ -266,12 +266,9 @@
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {
-    speed: 400,
+    speed: 250,
     loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
+    autoplay: false,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
