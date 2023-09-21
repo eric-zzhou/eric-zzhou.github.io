@@ -147,6 +147,13 @@
         slide.style.opacity = "0";
       }
     }
+
+    // TODO: add automation to start video if it exists in active slide and pause video if it exists in prev slide or next slide (since slider goes both ways)
+    // slides = document.body.getElementsByClassName('portfolio-details-slider')[0].children;
+    // for (var i = 0; i < slides.length; i++) {
+    //   var slide = slides[i];
+      
+    // }
   });
 
   /**
