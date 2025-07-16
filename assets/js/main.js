@@ -216,7 +216,8 @@
 
   courseswiper.on("slideChange", function () {
     console.log("active index:" + courseswiper.activeIndex);
-    var curr = (courseswiper.activeIndex + 6) % 9;
+    // With n courses, it's (i + n - 3) % n
+    var curr = (courseswiper.activeIndex + 5) % 8;
     console.log("curr:" + curr);
 
     var slides =
@@ -231,8 +232,8 @@
       // console.log("");
       if (
         slideind == curr ||
-        slideind == (curr + 1) % 9 ||
-        slideind == (curr + 2) % 9
+        slideind == (curr + 1) % 8 ||
+        slideind == (curr + 2) % 8
       ) {
         slide.style.opacity = "1";
       } else {
